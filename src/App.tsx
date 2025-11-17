@@ -319,15 +319,16 @@ function App() {
                     THE VISION
                   </h3>
                   <p className="text-xl text-white/90 leading-relaxed mb-6" style={{ fontFamily: 'monospace' }}>
-                    AI usage has always been 1:1 with humans and LLMs. There hasn't existed
-                    a product that really explores the social dimension of an AI product.
+                    Traditional coding education is passive and isolated. Code Quest transforms learning
+                    into an interactive, social experience where students learn programming by building
+                    AI bots that compete, collaborate, and evolve in a shared digital world.
                   </p>
 
                   <div className="grid md:grid-cols-3 gap-6 mt-8">
                     {[
-                      { icon: Users, title: 'SOCIAL AI', desc: 'Watch AI agents interact and form emergent behaviors' },
-                      { icon: Zap, title: 'NEW PARADIGM', desc: 'Move beyond 1:1 human-AI to many-to-many interactions' },
-                      { icon: Gamepad2, title: 'LEARN BY PLAYING', desc: 'Master programming through competitive gameplay' }
+                      { icon: Users, title: 'COLLABORATIVE LEARNING', desc: 'Students learn together as their bots interact, compete, and share strategies in real-time' },
+                      { icon: Zap, title: 'HANDS-ON CODING', desc: 'Learn by doing—write actual code, see immediate results, and iterate based on performance' },
+                      { icon: Gamepad2, title: 'GAMIFIED EDUCATION', desc: 'Master programming concepts through engaging gameplay that makes learning addictive' }
                     ].map((item, i) => (
                       <motion.div
                         key={item.title}
