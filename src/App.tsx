@@ -122,6 +122,33 @@ function App() {
             </motion.div>
 
             <motion.div
+              initial={{ scale: 0.8, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              transition={{ delay: 0.6 }}
+              className="mb-12"
+            >
+              <motion.div
+                className="relative inline-block border-4 border-cyan-400"
+                style={{
+                  boxShadow: '0 0 40px rgba(0,255,255,0.6), 8px 8px 0 rgba(0,0,0,0.5)'
+                }}
+                whileHover={{ scale: 1.02, boxShadow: '0 0 60px rgba(0,255,255,0.8), 8px 8px 0 rgba(0,0,0,0.5)' }}
+              >
+                <img
+                  src="/assets/screenshots/screenshot.gif"
+                  alt="Code Quest Gameplay"
+                  className="max-w-full h-auto block"
+                  style={{ maxHeight: '600px' }}
+                />
+                <div className="absolute inset-0 border-2 border-cyan-400 pointer-events-none"
+                  style={{
+                    boxShadow: 'inset 0 0 20px rgba(0,255,255,0.3)'
+                  }}
+                />
+              </motion.div>
+            </motion.div>
+
+            <motion.div
               className="flex flex-wrap gap-6 justify-center"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
@@ -194,7 +221,7 @@ function App() {
                   <div className="h-2 flex-1 bg-yellow-400" />
                 </motion.div>
 
-                <div className="grid md:grid-cols-2 gap-8">
+                <div className="grid md:grid-cols-2 gap-8 mb-8">
                   <div>
                     <h3 className="text-3xl font-bold text-white mb-4" style={{ fontFamily: 'monospace' }}>
                       THE OBJECTIVE
@@ -230,6 +257,34 @@ function App() {
                     </ul>
                   </div>
                 </div>
+
+                <motion.div
+                  initial={{ opacity: 0, y: 50 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.8, delay: 0.2 }}
+                  className="mt-8"
+                >
+                  <motion.div
+                    className="relative inline-block border-4 border-yellow-400"
+                    style={{
+                      boxShadow: '0 0 40px rgba(255,215,0,0.6), 8px 8px 0 rgba(0,0,0,0.5)'
+                    }}
+                    whileHover={{ scale: 1.02, boxShadow: '0 0 60px rgba(255,215,0,0.8), 8px 8px 0 rgba(0,0,0,0.5)' }}
+                  >
+                    <img
+                      src="/assets/screenshots/screenshot2.png"
+                      alt="Code Quest Game Screenshot"
+                      className="max-w-full h-auto block"
+                      style={{ maxHeight: '500px' }}
+                    />
+                    <div className="absolute inset-0 border-2 border-yellow-400 pointer-events-none"
+                      style={{
+                        boxShadow: 'inset 0 0 20px rgba(255,215,0,0.3)'
+                      }}
+                    />
+                  </motion.div>
+                </motion.div>
               </div>
             </motion.div>
 
