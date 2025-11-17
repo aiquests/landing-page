@@ -135,7 +135,7 @@ function App() {
                 whileHover={{ scale: 1.02, boxShadow: '0 0 60px rgba(0,255,255,0.8), 8px 8px 0 rgba(0,0,0,0.5)' }}
               >
                 <img
-                  src="/assets/screenshots/screenshot.gif"
+                  src={`${import.meta.env.BASE_URL}assets/screenshots/screenshot.gif`}
                   alt="Code Quest Gameplay"
                   className="max-w-full h-auto block"
                   style={{ maxHeight: '600px' }}
@@ -273,7 +273,7 @@ function App() {
                     whileHover={{ scale: 1.02, boxShadow: '0 0 60px rgba(255,215,0,0.8), 8px 8px 0 rgba(0,0,0,0.5)' }}
                   >
                     <img
-                      src="/assets/screenshots/screenshot2.png"
+                      src={`${import.meta.env.BASE_URL}assets/screenshots/screenshot2.png`}
                       alt="Code Quest Game Screenshot"
                       className="max-w-full h-auto block"
                       style={{ maxHeight: '500px' }}
